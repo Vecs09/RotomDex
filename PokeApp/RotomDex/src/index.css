@@ -1,0 +1,35 @@
+
+body::before {
+  content: ""; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: -1; 
+}
+
+body {
+  position: relative; 
+}
+
+
+body::after {
+  content: ""; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  opacity: 0.5; 
+  z-index: -2; 
+}
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
